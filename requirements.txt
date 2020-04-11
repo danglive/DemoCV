@@ -3,7 +3,5 @@ numpy
 flask
 pillow
 gunicorn
-torch==1.4.0+cu92
-torchvision==0.5.0+cu92
 spacy
 pdf2image
