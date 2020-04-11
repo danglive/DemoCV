@@ -1,0 +1,19 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<div class="jumbotron">
+        <h1 class="display-4">Block segmentation of CVs</h1>
+        <hr class="my-4">
+		<br><br>
+      <form action = "/" method = "POST"
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+          <br><br>
+      </form>
+        <a class="btn btn-primary btn-lg" href="https://www.lajavaness.com/team.html" role="button"> 
+        Data Team </a>
+        
+</div>
+{% endblock %}
