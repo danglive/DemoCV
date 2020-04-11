@@ -3,3 +3,9 @@ numpy
 flask
 pillow
 gunicorn
+torch==1.4.0+cu92
+torchvision==0.5.0+cu92
+spacy
+pdf2image
+git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI
+git+https://github.com/facebookresearch/detectron2.git
