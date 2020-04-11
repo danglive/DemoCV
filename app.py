@@ -36,22 +36,9 @@ def logout():
     session['logged_in'] = False
     return home()
 
-import io
 
-from flask import current_app as app
-from flask import send_file
 
-from myproject import Obj
 
-@app.route('/logo.png')
-def logo():
-    """Serves the logo image."""
-
-    obj = Obj.objects.get(title='Logo')
-
-    return send_file(io.BytesIO(obj.logo.read()),
-                     attachment_filename='logo.png',
-                     mimetype='image/png')
 
 
 if __name__ == "__main__":
